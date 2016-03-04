@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--  <link rel="icon" href="imagens/favicon.png"> -->
+    <title>Formulario</title>
+  </head>
+  <body>
+    <form action="enviar_contato.php" method="post">
+      Nome: <input type="text" name="nome" id="nome" placeholder="digite seu nome" required><br><br>
+      Email: <input type="email" name="email" id="email" placeholder="digite seu email" required><br><br>
+      Período: <select name="periodo" id="periodo" required>
+        <option disabled selected>Selecione</option>
+        <option value="Primeiro" required>Primeiro</option>
+        <option value="Segundo" required>Segundo</option>
+        <option value="Terceiro" required>Terceiro</option>
+        <option value="Quarto" required>Quarto</option>
+        <option value="Quinto" required>Quinto</option>
+      </select><br><br>
+      Sentiu falta de alguma coisa que facilitasse na navegação?<br>
+      <input type="radio" name="facilitador" value="sim" required> Sim <input type="radio" name="facilitador" value="nao"> Não
+      <br><br>
+      Se sim, o que?<br><br>
+      <textarea rows="10" cols="40" name="opiniao1app1" id="opiniao1app1"></textarea><br><br>
+      Visual do app: <input type="radio" name="opiniao2app1" id="opiniao2app1" value="atraente" required>Atraente
+      <input type="radio" name="opiniao2app1" id="opiniao2app1" value="repulsivo" required>Repulsivo<br><br>
+      O app é auto-explicativo: <input type="radio" name="opiniao3app1" id="opiniao3app1" value="sim" required>Sim
+      <input type="radio" name="opiniao3app1" id="opiniao3app1" value="nao" required>Não<br><br>
+      Você achou o app útil? <input type="radio" name="opiniao4app1" id="opiniao4app1" value="sim" required>Sim
+      <input type="radio" name="opiniao4app1" id="opiniao4app1" value="nao" required>Não
+      <br><br><input type="submit" name="enviar">
+    </form>
+  </body>
+</html>
