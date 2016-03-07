@@ -1,34 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <!--  <link rel="icon" href="imagens/favicon.png"> -->
-    <title>Formulario</title>
+	<head>
+    <title>PICT - Formulário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <form action="enviar_contato.php" method="post">
-      Nome: <input type="text" name="nome" id="nome" placeholder="digite seu nome" required><br><br>
-      Email: <input type="email" name="email" id="email" placeholder="digite seu email" required><br><br>
+    <div class="jumbotron">
+      <div class="container-fluid">
+        <h2 class="text-center">PICT</h2>      
+        <h3 class="text-center">Teste de Interface - 01</h3>
+        <hr style="border: 1px ridge black">
+      </div>
+    </div>
+    <div class="container-fluid">
+    	<form action="enviar_contato.php" method="post" class="form-group">
+      Nome: <input type="text" name="nome" id="nome" placeholder="digite seu nome" required  class="form-control"><br><br>
+      Email: <input type="email" name="email" id="email" placeholder="digite seu email" required  class="form-control"><br><br>
       Período: <select name="periodo" id="periodo" required>
-        <option disabled selected>Selecione</option>
+        <option disabled selected  class="form-control">Selecione</option>
         <option value="Primeiro" required>Primeiro</option>
         <option value="Segundo" required>Segundo</option>
         <option value="Terceiro" required>Terceiro</option>
         <option value="Quarto" required>Quarto</option>
         <option value="Quinto" required>Quinto</option>
       </select><br><br>
+      <h4>App1</h4>
       Sentiu falta de alguma coisa que facilitasse na navegação?<br>
       <input type="radio" name="facilitador" value="sim" required> Sim <input type="radio" name="facilitador" value="nao"> Não
       <br><br>
       Se sim, o que?<br><br>
-      <textarea rows="10" cols="40" name="opiniao1app1" id="opiniao1app1"></textarea><br><br>
+      <textarea rows="10" cols="40" name="opiniao1app1" id="opiniao1app1"  class="form-control"></textarea><br><br>
       Visual do app: <input type="radio" name="opiniao2app1" id="opiniao2app1" value="atraente" required>Atraente
       <input type="radio" name="opiniao2app1" id="opiniao2app1" value="repulsivo" required>Repulsivo<br><br>
       O app é auto-explicativo: <input type="radio" name="opiniao3app1" id="opiniao3app1" value="sim" required>Sim
       <input type="radio" name="opiniao3app1" id="opiniao3app1" value="nao" required>Não<br><br>
-      Você achou o app útil? <input type="radio" name="opiniao4app1" id="opiniao4app1" value="sim" required>Sim
+      Você achou o app útil? 
+      <br><input type="radio" name="opiniao4app1" id="opiniao4app1" value="sim" required>Sim<br>
       <input type="radio" name="opiniao4app1" id="opiniao4app1" value="nao" required>Não
-      <br><br><input type="submit" name="enviar">
+      
+      <hr>
+      
+      <h4>App2</h4>
+      Sentiu falta de alguma coisa que facilitasse na navegação?<br>
+      <input type="radio" name="facilitador" value="sim" required> Sim <input type="radio" name="facilitador" value="nao"> Não
+      <br><br>
+      Se sim, o que?<br><br>
+      <textarea rows="10" cols="40" name="opiniao1app2" id="opiniao1app2"  class="form-control"></textarea><br><br>
+      Visual do app: <input type="radio" name="opiniao2app2" id="opiniao2app2" value="atraente" required>Atraente
+      <input type="radio" name="opiniao2app2" id="opiniao2app2" value="repulsivo" required>Repulsivo<br><br>
+      O app é auto-explicativo: <input type="radio" name="opiniao3app2" id="opiniao3app2" value="sim" required>Sim
+      <input type="radio" name="opiniao3app2" id="opiniao3app2" value="nao" required>Não<br><br>
+      Você achou o app útil? 
+      <br><input type="radio" name="opiniao4app2" id="opiniao4app2" value="sim" required>Sim<br>
+      <input type="radio" name="opiniao4app2" id="opiniao4app2" value="nao" required>Não
+      
+      <hr>
+      
+      <h4>App3</h4>
+      Sentiu falta de alguma coisa que facilitasse na navegação?<br>
+      <input type="radio" name="facilitador" value="sim" required> Sim <input type="radio" name="facilitador" value="nao"> Não
+      <br><br>
+      Se sim, o que?<br><br>
+      <textarea rows="10" cols="40" name="opiniao1app3" id="opiniao1app3"  class="form-control"></textarea><br><br>
+      Visual do app: <input type="radio" name="opiniao2app3" id="opiniao2app3" value="atraente" required>Atraente
+      <input type="radio" name="opiniao2app3" id="opiniao2app3" value="repulsivo" required>Repulsivo<br><br>
+      O app é auto-explicativo: <input type="radio" name="opiniao3app3" id="opiniao3app3" value="sim" required>Sim
+      <input type="radio" name="opiniao3app3" id="opiniao3app3" value="nao" required>Não<br><br>
+      Você achou o app útil? 
+      <br><input type="radio" name="opiniao4app3" id="opiniao4app3" value="sim" required>Sim<br>
+      <input type="radio" name="opiniao4app3" id="opiniao4app3" value="nao" required>Não
+      
+      <br><br><input type="submit" name="enviar"  class="btn btn-primary">
     </form>
+    </div>
   </body>
 </html>
